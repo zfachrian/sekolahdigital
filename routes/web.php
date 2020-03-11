@@ -13,13 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('front.index');
-// });
 
 //front
-Route::get('/', 'viewController@index');
-Route::get('/team', 'viewController@teamView');
-Route::get('/contact', 'viewController@contactView');
+Route::get('/', 'front\viewController@index');
+Route::get('/team', 'front\viewController@teamView');
+Route::get('/contact', 'front\viewController@contactView');
 
 
